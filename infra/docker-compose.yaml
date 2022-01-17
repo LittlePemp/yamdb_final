@@ -9,8 +9,8 @@ services:
       - .env
   web:
     build:
-      context: ../
-      dockerfile: ../api_yamdb/Dockerfile
+      context: ./
+      dockerfile: ./Dockerfile
     image: largepemp/yamdb
     restart: always
     volumes:
