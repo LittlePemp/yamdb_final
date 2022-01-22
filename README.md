@@ -29,20 +29,20 @@ JWT-токен (Отправление confirmation_code на переданны
 1. Создайте копию репозитория (желательно без форка, чтобы не копировать лишнюю историю и коммиты).
 2. Создайте несколько Секретов, также для локальной работы создайте файл infra/.env.
 3. Создайте секреты и переменные в .env файле
-- .env:
-<POSTGRES_USER=*Ваш юзер бд POSTGRES*
-POSTGRES_PASSWORD=*Ваш юзер бд POSTGRES*
-DB_HOST=db
-DB_PORT=5432
-DB_ENGINE=django.db.backends.postgresql
-DB_NAME=postgres>
-- Secrets:
-**То же что и .env**
-\+
-<DOCKER_PASSWORD ~ Пароль на DockerHub
-DOCKER_USERNAME ~ Логин на DockerHub
-HOST ~ ip Вашего боевого сервера
-SSH_KEY ~ Открытый SSH ключ машины, имеющей доступ к боевому серверу
-TELEGRAM_TO ~ id в Telegram для отссылки сообщения о корректном ислполнении всех jobs (можно посмотреть через бота @userbotinfo)
-TELEGRAM_TOKEN ~ Токен телеграм бота, отправляющего сообщения (Посмотрель с помощью @BotFather)
-USER ~ Логин пользователя на боевом сервере>
+- .env:  
+>POSTGRES_USER=*Ваш юзер бд POSTGRES*  
+>POSTGRES_PASSWORD=*Ваш юзер бд POSTGRES*  
+>DB_HOST=db  
+>DB_PORT=5432  
+>DB_ENGINE=django.db.backends.postgresql  
+>DB_NAME=postgres  
+- Secrets:  
+**То же что и .env**  
+\+  
+>DOCKER_PASSWORD ~ Пароль на DockerHub  
+>DOCKER_USERNAME ~ Логин на DockerHub  
+>HOST ~ ip Вашего боевого сервера  
+>SSH_KEY ~ Открытый SSH ключ машины, имеющей доступ к боевому серверу  
+>TELEGRAM_TO ~ id в Telegram для отссылки сообщения о корректном ислполнении всех jobs (можно посмотреть через бота @userbotinfo)  
+>TELEGRAM_TOKEN ~ Токен телеграм бота, отправляющего сообщения (Посмотрель с помощью @BotFather)  
+>USER ~ Логин пользователя на боевом сервере>  
